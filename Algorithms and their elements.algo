@@ -1,0 +1,21 @@
+ALGORITHM algorithm_name
+VAR
+   nb_car:integer:=0;
+   nb_mot:integer:=1;
+   nb_voy:integer:=0;
+   c:CHAR:="";
+BEGIN
+    WHILE ((c<>.)) DO
+        read(c):
+    nb_car=nb_car+1;
+    IF (c="") THEN
+        nb_mot:=nb_mot+1;
+    END_IF
+    IF(c="a"or c="i"or c="e"or c="o" or c="u" or c="y") THEN
+        nb_voy=nb_voy+1;
+    END_IF
+    END_WHILE 
+    write ("le nbre de voy est",nb_voy);
+    write("le nb de mot est",nb_mot);
+    write("le nb de carac est ",nb_car);
+END
